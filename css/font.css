@@ -1,0 +1,71 @@
+/*
+Error: () isn't a valid CSS value.
+        on line 82 of font.scss
+
+77: 
+78: 
+79: // Examples
+80: 
+81: .foo {
+82:     text-shadow: long-shadow(
+83:         // Shadow should have an angle of 42 degrees
+84:         $direction: 42deg,
+85:             // Shadow should be contain within a 100x100 box
+86:         $length: 100px,
+87:             // Shadow should start this color
+
+Backtrace:
+font.scss:82
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/script/value/list.rb:45:in `to_s'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/bin/scss:13:in `<top (required)>'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/bin/scss:22:in `load'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/bin/scss:22:in `<main>'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/yuanqili/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: () isn't a valid CSS value.\A         on line 82 of font.scss\A \A 77: \A 78: \A 79: // Examples\A 80: \A 81: .foo {\A 82:     text-shadow: long-shadow(\A 83:         // Shadow should have an angle of 42 degrees\A 84:         $direction: 42deg,\A 85:             // Shadow should be contain within a 100x100 box\A 86:         $length: 100px,\A 87:             // Shadow should start this color"; }
